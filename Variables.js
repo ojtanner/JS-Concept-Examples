@@ -2,6 +2,9 @@
 
 /**
  * Var vs Let
+ * 
+ * Var is function scoped
+ * Let is block scoped
  */
 
 function hereBeVar () {
