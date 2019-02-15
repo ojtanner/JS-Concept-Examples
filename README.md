@@ -10,3 +10,8 @@ look up.
 * Hoisting
 * Variables
 * AsyncAwait
+
+Future content ideas:
+- bind and this
+- lexical scoping and arrow functions
+- closures, partial function application, currying
