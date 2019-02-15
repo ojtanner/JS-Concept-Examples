@@ -9,3 +9,4 @@ look up.
 * Promises
 * Hoisting
 * Variables
+* AsyncAwait
