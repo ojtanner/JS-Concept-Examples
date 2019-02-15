@@ -16,3 +16,8 @@ Future content ideas:
 - lexical scoping and arrow functions
 - closures, partial function application, currying
 - prototype inheritance
+
+Group content by type:
+- Language Features 
+- Design Patterns
+- etc
