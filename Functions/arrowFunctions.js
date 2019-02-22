@@ -20,8 +20,16 @@ This means that the context is preserved.
 */
 
 /*
-Normal function creates new lexical scope.
+Normal nested function creates new lexical scope.
 "this" does not point to objec anymore.
+
+Bound nested function has context bound to myObject.
+Context is bound to "this" of object.
+
+Arrow function does not create new context for "this".
+"this" is inherited from enclosing function.
+Enclosing function is method of myObject,
+therefore "this" points to myObject.
 */
 let myObject = {
     a: "value of myObject.a",
