@@ -10,10 +10,10 @@ look up.
 * Hoisting
 * Variables
 * AsyncAwait
+* Binding Functions
+* ArrowFunctions and Lexical Scope
 
 Future content ideas:
-- bind and this
-- lexical scoping and arrow functions
 - closures, partial function application, currying
 - prototype inheritance
 
