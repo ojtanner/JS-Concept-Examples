@@ -45,10 +45,27 @@ let myObject = {
     }
 }
 
+/*
+Arrow function as direct method does inherit context from enclosing
+lexical scope, which as of this point is NOT mySecondObject.
+*/
+let mySecondObject = {
+    a: "value of mySecondObject.a",
+    getA: () => {
+        return this.a;
+    }
+}
+
 function printA () {
     console.log("Normal function nested in method: ",myObject.getA());
     console.log("Normal function nexted bound to object",myObject.getBoundA());
     console.log("Arrow funciton nested in method: ",myObject.getArrowA());
 }
 
+function printSecondA () {
+    console.log("Arrow function as method without another enclosing method: ",mySecondObject.getA());
+}
+
 printA();
+console.log("\n");
+printSecondA();
