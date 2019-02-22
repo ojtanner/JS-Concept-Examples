@@ -35,13 +35,22 @@ let myObject = {
     a: "value of myObject.a",
     self: this,
     getA: function() {
-        return (function () {return this.a})();
+        return (function () {
+            //console.log("\"this\" in nested function points to: ", this);
+            return this.a;
+        })();
     },
     getBoundA: function() {
-        return (function () {return this.a}.bind(myObject))();
+        return (function () {
+            //console.log("\"this\" in nested function points to: ", this);
+            return this.a
+        }.bind(myObject))();
     },
     getArrowA: function() {
-        return (() => {return this.a})();
+        return (() => {
+            //console.log("\"this\" in nested function points to: ", this);
+            return this.a
+        })();
     }
 }
 
@@ -52,18 +61,19 @@ lexical scope, which as of this point is NOT mySecondObject.
 let mySecondObject = {
     a: "value of mySecondObject.a",
     getA: () => {
+        console.log("\"this\" in nested function points to: ", this);
         return this.a;
     }
 }
 
 function printA () {
-    console.log("Normal function nested in method: ",myObject.getA());
-    console.log("Normal function nexted bound to object",myObject.getBoundA());
-    console.log("Arrow funciton nested in method: ",myObject.getArrowA());
+    console.log("Normal function nested in method: ",myObject.getA() ,"\n");
+    console.log("Normal function nexted bound to object",myObject.getBoundA() ,"\n");
+    console.log("Arrow funciton nested in method: ",myObject.getArrowA() ,"\n");
 }
 
 function printSecondA () {
-    console.log("Arrow function as method without another enclosing method: ",mySecondObject.getA());
+    console.log("Arrow function as method without another enclosing method: ",mySecondObject.getA() ,"\n");
 }
 
 printA();
