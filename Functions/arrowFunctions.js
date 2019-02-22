@@ -33,8 +33,6 @@ let myObject = {
     }
 }
 
-
-
 function printA () {
     console.log("Normal function nested in method: ",myObject.getA());
     console.log("Arrow funciton nested in method: ",myObject.getArrowA());
