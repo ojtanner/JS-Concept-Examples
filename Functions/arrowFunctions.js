@@ -25,8 +25,12 @@ Normal function creates new lexical scope.
 */
 let myObject = {
     a: "value of myObject.a",
+    self: this,
     getA: function() {
-        return (function a() {return this.a})();
+        return (function () {return this.a})();
+    },
+    getBoundA: function() {
+        return (function () {return this.a}.bind(myObject))();
     },
     getArrowA: function() {
         return (() => {return this.a})();
@@ -35,6 +39,7 @@ let myObject = {
 
 function printA () {
     console.log("Normal function nested in method: ",myObject.getA());
+    console.log("Normal function nexted bound to object",myObject.getBoundA());
     console.log("Arrow funciton nested in method: ",myObject.getArrowA());
 }
 
