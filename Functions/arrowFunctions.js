@@ -189,3 +189,29 @@ myObject = {
 };
 
 console.log("2.5) Arrow functions and bind:",myObject.myMethod());
+
+//2.6) Arrow functions inside standard functions
+
+myObject = {
+    value: "object value",
+    myMethod: function() {
+        let myValue;
+        (() => {
+            /*
+            Here the lexical scope of the arrow function
+            is the outer function. 
+            Since the outer function is a standard function
+            used as a method, its "this" is always set to myObject.
+            Therefore, the arrow function inherits "this" set to myObject
+            from the enclosing standard function.
+
+            We define a funcion expression and inmediatly invoke it.
+            Also known as the good old IIFE.
+            */
+            myValue = this.value;
+        })()
+        return myValue;
+    }
+};
+
+console.log("2.6) Arrow functions inside standard functions:", myObject.myMethod());
