@@ -1,10 +1,10 @@
 "use strict";
 
 /**
- * Async Functions can use keyword Await
- * Await indicates that function will wait until
- * codeblock after Await resolves
- * Then rest of instructions will be carried out
+ * Async Functions can use the keyword "await"
+ * Await indicates that the function will wait until
+ * the codeblock after Await resolves
+ * Then the rest of the instructions will be carried out
  * Non-Blocking.
  */
 
