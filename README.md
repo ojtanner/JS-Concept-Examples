@@ -18,6 +18,15 @@ As of right now i am not satisfied with the whole thing.
 Future content ideas:
 - closures, partial function application, currying
 - prototype inheritance
+- iterators, generators and async generators
+- object property-attributes
+- proxies
+- maps and sets
+- map, reduce, filter
+- DOM manipulation
+- ES6 modules
+- rest and spread
+- object destructuring
 
 Group content by type:
 - Language Features 
