@@ -6,29 +6,43 @@ look up.
 I probably need to revise and standardise the whole thing.
 As of right now i am not satisfied with the whole thing.
 
-## Table of contents so far
+## Sections to be created:
+* Asynchronous JS
+    * Promises
+    * Async Await
+    * Async Generators
+    * ...
+*   Functions
+    * Arguments-Access
+    * Declarations vs Expressions
+    * Scope and Execution Context (this, closures, etc.)
+    * Arrow-Functions and Lexical Scope
+    * IIFE's
+    * Hoisting
+    * Some of the Function-Methods
+    * ...
+* Variable Types
+    * Var
+    * Let and Const
+    * Hosting
 
-* Promises
-* Hoisting
-* Variables
-* AsyncAwait
-* Binding Functions
-* ArrowFunctions and Lexical Scope
+* Iterations Protocol
+    * Iterable Methods 
+    * Iterators
+    * Generators
 
-Future content ideas:
-- closures, partial function application, currying
-- prototype inheritance
-- iterators, generators and async generators
-- object property-attributes
-- proxies
-- maps and sets
-- map, reduce, filter
-- DOM manipulation
-- ES6 modules
-- rest and spread
-- object destructuring
+* Primitive Types
+    * The different types 
+    * The Symbol Type
 
-Group content by type:
-- Language Features 
-- Design Patterns
-- etc
+* Object Orientet JS
+    * Prototypical Inheritance
+    * Constructors
+
+* The Object
+    * Setting Object Properties
+    * Getters and Setters
+    * Proxies (?) 
+    * Methods
+    * Some of the Object-Methods
+    * Equality
