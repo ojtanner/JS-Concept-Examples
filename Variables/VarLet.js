@@ -68,13 +68,8 @@ console.log(`Reassigned var myName: ${myName}`);
 
 let mySurname = "Flintstone";
 console.log(`Declared let mySurname ${mySurname}`);
-
-try {
-  let mySurname = "Rubble";
-} catch (error) {
-  console.log('Uh-oh, you can\'t redeclare let!');
-  console.error("\n", error);
-}
+// Try uncommenting the next line which redeclares mySurname in the same block
+// let mySurname = "Rubble";
 
 mySurname = "Rubble";
 console.log(`Reassigned let mySurname ${mySurname}`);
